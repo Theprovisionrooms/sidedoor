@@ -1,0 +1,39 @@
+# Sidedoor Digital
+
+> Sidedoor Digital is a one person digital build studio based in Southport, Merseyside, run by Jordan. Custom websites, apps, POS systems, e-commerce, booking systems, QR ordering, automations and custom software for small businesses across Southport, Preston, Liverpool and Birkenhead.
+
+Sidedoor Digital builds one project at a time, start to finish, with no account managers, no junior handed the work, and no agency mark up. Pricing is a one off build fee plus a low monthly fee for hosting and upkeep.
+
+## What we build
+
+- Websites: custom builds coded from scratch, not page builder templates
+- Apps: web and mobile ready, for loyalty, bookings and galleries
+- POS systems: till, stock and staff working together
+- E-commerce: checkout, stock and delivery handled properly
+- Booking and scheduling: staff calendars, deposits, automatic reminders
+- QR ordering: QR menus, loyalty cards, check ins
+- Automations: emails, stock alerts, follow ups handled quietly in the background
+- Integrations: getting existing tools to talk to each other
+- AI search: search that understands what people mean
+- Custom software: dashboards, internal tools, member systems
+
+## Who we build for
+
+Small businesses that want something built around how they actually work: salons, cafes, restaurants, home schools, shops, tradespeople and anyone starting a business online.
+
+## Where
+
+Based in Southport, Merseyside. Client work across Southport, Preston, Liverpool and Birkenhead, with remote projects taken on anywhere in the UK.
+
+## Pages
+
+- Home: https://getsidedoor.co.uk/
+- Services: https://getsidedoor.co.uk/services.html
+- Who we build for: https://getsidedoor.co.uk/industries.html
+- Work (case files): https://getsidedoor.co.uk/work.html
+- About: https://getsidedoor.co.uk/about.html
+- Contact: https://getsidedoor.co.uk/contact.html
+
+## Contact
+
+hello: getsidedoor@gmail.com
