@@ -357,22 +357,23 @@ ul.seal-list li .seal{ margin-top:2px; }
   padding:26px 0;
   border-bottom:1px solid var(--line);
   overflow:hidden;
-  isolation:isolate;
 }
 .case:first-child{ padding-top:0; }
-.case::before{
-  content:"";
+.case-photo{
   position:absolute;
   inset:0;
-  background-image:var(--photo, none);
   background-size:cover;
   background-position:center;
-  opacity:0.45;
-  filter:brightness(1.9) contrast(0.9) saturate(1.15);
+  opacity:0.6;
+  filter:brightness(1.15) contrast(1) saturate(1.15);
   -webkit-mask-image:linear-gradient(90deg, black 0%, black 45%, transparent 85%);
   mask-image:linear-gradient(90deg, black 0%, black 45%, transparent 85%);
-  z-index:-1;
+  z-index:0;
   pointer-events:none;
+}
+.case-title, .case p, .case-link{
+  position:relative;
+  z-index:1;
 }
 .case-title{ display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
 .case-title h3{ margin:0; }
