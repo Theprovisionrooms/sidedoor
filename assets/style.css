@@ -1,6 +1,6 @@
 /* ================================================================
    SIDEDOOR DIGITAL | shared stylesheet
-   Tokens: ink / gold / bone / seal (emerald). Display: Fraunces.
+   Tokens: ink / gold / bone / seal (emerald). Display: Chakra Petch.
    Body: Inter. Utility/label: IBM Plex Mono.
    ================================================================ */
 
@@ -19,7 +19,7 @@
   --line:       rgba(243,238,225,0.10);
   --line-strong:rgba(243,238,225,0.18);
 
-  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-display: "Chakra Petch", "IBM Plex Mono", ui-monospace, monospace;
   --font-body:    "Inter", -apple-system, "Segoe UI", sans-serif;
   --font-mono:    "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
 
@@ -108,14 +108,15 @@ body{
 h1,h2,h3,h4{
   font-family:var(--font-display);
   font-weight:600;
-  line-height:1.08;
+  line-height:1.05;
   margin:0 0 0.5em;
   color:var(--bone);
   letter-spacing:-0.01em;
+  text-transform:uppercase;
 }
-h1{ font-size:clamp(2.6rem, 5.4vw, 4.6rem); font-weight:560; }
-h2{ font-size:clamp(1.9rem, 3.4vw, 2.9rem); }
-h3{ font-size:1.28rem; font-weight:600; }
+h1{ font-size:clamp(2.5rem, 5.2vw, 4.2rem); font-weight:600; letter-spacing:-0.015em; }
+h2{ font-size:clamp(1.8rem, 3.2vw, 2.7rem); }
+h3{ font-size:1.22rem; font-weight:600; letter-spacing:0; text-transform:none; }
 p{ margin:0 0 1em; color:var(--bone-dim); }
 .lede{ font-size:1.2rem; color:var(--bone); max-width:60ch; }
 
@@ -366,6 +367,7 @@ ul.seal-list li .seal{ margin-top:2px; }
 .manifesto blockquote{
   margin:0; font-family:var(--font-display); font-size:clamp(1.3rem,2.4vw,1.8rem);
   color:var(--bone); font-weight:500; line-height:1.5; max-width:52ch;
+  text-transform:none; letter-spacing:0;
 }
 .manifesto cite{ display:flex; align-items:center; gap:10px; margin-top:26px; font-style:normal; font-family:var(--font-mono); font-size:12.5px; letter-spacing:0.06em; color:var(--gold); text-transform:uppercase; }
 .manifesto cite::before{ content:""; width:22px; height:1px; background:var(--gold); flex:none; }
@@ -389,11 +391,13 @@ ul.seal-list li .seal{ margin-top:2px; }
   color:var(--seal);
   clip-path: inset(0 0 100% 0);
   animation: glitch-1 6s infinite linear;
+  animation-delay: var(--glitch-delay, 0s);
 }
 .glitch::after{
   color:var(--gold-soft);
   clip-path: inset(0 0 100% 0);
   animation: glitch-2 6s infinite linear;
+  animation-delay: var(--glitch-delay, 0s);
 }
 @keyframes glitch-1{
   0%, 91%, 100%{ clip-path: inset(0 0 100% 0); transform:translate(0,0); opacity:0; }
@@ -411,6 +415,104 @@ ul.seal-list li .seal{ margin-top:2px; }
 @media (prefers-reduced-motion: reduce){
   .glitch::before, .glitch::after{ display:none; }
 }
+
+/* ---------- micrograph texture system ----------
+   Schematic vector marks, masked to a flat theme colour so they read
+   as our own diagrams rather than dropped-in artwork. Decorative only. */
+.hero, .page-hero, .manifesto, .card, .industry-card{ position:relative; }
+.hero, .page-hero{ overflow:hidden; }
+.hero .wrap, .page-hero .wrap, .manifesto .wrap{ position:relative; z-index:1; }
+
+.hero::after,
+.page-hero::after{
+  content:"";
+  position:absolute;
+  top:-50px; right:-70px;
+  width:400px; height:400px;
+  -webkit-mask-image:url("micrograph-frame.svg");
+          mask-image:url("micrograph-frame.svg");
+  -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+  -webkit-mask-size:contain; mask-size:contain;
+  background-color:var(--line-strong);
+  opacity:0.5;
+  pointer-events:none;
+  z-index:0;
+}
+
+.manifesto::before{
+  content:"";
+  position:absolute;
+  left:50%; top:50%;
+  width:620px; height:620px;
+  transform:translate(-50%,-50%);
+  -webkit-mask-image:url("micrograph-hub.svg");
+          mask-image:url("micrograph-hub.svg");
+  -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+  -webkit-mask-size:contain; mask-size:contain;
+  background-color:var(--seal-dim);
+  opacity:0.07;
+  pointer-events:none;
+  z-index:0;
+}
+
+footer{ position:relative; overflow:hidden; }
+footer .wrap{ position:relative; z-index:1; }
+footer::before{
+  content:"";
+  position:absolute;
+  left:-30px; bottom:-50px;
+  width:220px; height:170px;
+  -webkit-mask-image:url("micrograph-nodes.svg");
+          mask-image:url("micrograph-nodes.svg");
+  -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+  -webkit-mask-size:contain; mask-size:contain;
+  background-color:var(--line-strong);
+  opacity:0.4;
+  pointer-events:none;
+}
+
+.card::after, .industry-card::after{
+  content:"";
+  position:absolute;
+  right:10px; bottom:10px;
+  width:60px; height:46px;
+  -webkit-mask-image:url("micrograph-nodes.svg");
+          mask-image:url("micrograph-nodes.svg");
+  -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+  -webkit-mask-size:contain; mask-size:contain;
+  background-color:var(--gold);
+  opacity:0.1;
+  pointer-events:none;
+}
+.card{ overflow:hidden; }
+
+.pipeline-band{ position:relative; overflow:hidden; padding-bottom:60px; }
+.pipeline-band .wrap{ min-height:200px; }
+.pipeline-band::before{
+  content:"";
+  position:absolute;
+  left:50%; top:26px;
+  width:min(900px, 92%); height:180px;
+  transform:translateX(-50%);
+  -webkit-mask-image:url("micrograph-pipeline.svg");
+          mask-image:url("micrograph-pipeline.svg");
+  -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+  -webkit-mask-size:contain; mask-size:contain;
+  -webkit-mask-position:center; mask-position:center;
+  background-color:var(--line-strong);
+  opacity:0.45;
+  pointer-events:none;
+  z-index:0;
+}
+.pipeline-band .wrap{ position:relative; z-index:1; }
+
+@media (max-width:720px){
+  .hero::after, .page-hero::after{ width:220px; height:220px; top:-30px; right:-50px; opacity:0.35; }
+  .manifesto::before{ width:420px; height:420px; opacity:0.05; }
+  .pipeline-band::before{ display:none; }
+  footer::before{ width:150px; height:120px; }
+}
+
 
 /* ---------- FAQ ---------- */
 .faq-item{ border-bottom:1px solid var(--line); padding:22px 0; }

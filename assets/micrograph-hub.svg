@@ -1,0 +1,30 @@
+<svg viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.2">
+  <!-- Sidedoor Digital :: one-operator radial hub mark. -->
+  <circle cx="350" cy="350" r="230" stroke-dasharray="2 6" opacity="0.6" />
+  <circle cx="350" cy="350" r="180" opacity="0.8" />
+  <circle cx="350" cy="350" r="70" />
+  <g stroke-linecap="round">
+    <line x1="350" y1="120" x2="350" y2="170" />
+    <line x1="350" y1="530" x2="350" y2="580" />
+    <line x1="120" y1="350" x2="170" y2="350" />
+    <line x1="530" y1="350" x2="580" y2="350" />
+    <line x1="200" y1="200" x2="235" y2="235" />
+    <line x1="500" y1="200" x2="465" y2="235" />
+    <line x1="200" y1="500" x2="235" y2="465" />
+    <line x1="500" y1="500" x2="465" y2="465" />
+  </g>
+  <circle cx="350" cy="120" r="4" fill="currentColor" stroke="none" />
+  <circle cx="350" cy="580" r="4" fill="currentColor" stroke="none" />
+  <circle cx="120" cy="350" r="4" fill="currentColor" stroke="none" />
+  <circle cx="580" cy="350" r="4" fill="currentColor" stroke="none" />
+  <circle cx="200" cy="200" r="3" fill="currentColor" stroke="none" />
+  <circle cx="500" cy="200" r="3" fill="currentColor" stroke="none" />
+  <circle cx="200" cy="500" r="3" fill="currentColor" stroke="none" />
+  <circle cx="500" cy="500" r="3" fill="currentColor" stroke="none" />
+  <text x="350" y="345" font-family="'IBM Plex Mono', monospace" font-size="13" letter-spacing="2.5" fill="currentColor" stroke="none" text-anchor="middle">ONE</text>
+  <text x="350" y="362" font-family="'IBM Plex Mono', monospace" font-size="13" letter-spacing="1.5" fill="currentColor" stroke="none" text-anchor="middle">OPERATOR</text>
+  <text x="350" y="70" font-family="'IBM Plex Mono', monospace" font-size="10" letter-spacing="2" fill="currentColor" stroke="none" text-anchor="middle" opacity="0.7">WEBSITE</text>
+  <text x="350" y="640" font-family="'IBM Plex Mono', monospace" font-size="10" letter-spacing="2" fill="currentColor" stroke="none" text-anchor="middle" opacity="0.7">DATABASE</text>
+  <text x="80" y="350" font-family="'IBM Plex Mono', monospace" font-size="10" letter-spacing="2" fill="currentColor" stroke="none" text-anchor="middle" opacity="0.7">BOOKING</text>
+  <text x="620" y="350" font-family="'IBM Plex Mono', monospace" font-size="10" letter-spacing="2" fill="currentColor" stroke="none" text-anchor="middle" opacity="0.7">CLOUD</text>
+</svg>

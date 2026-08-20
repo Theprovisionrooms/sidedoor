@@ -1,0 +1,24 @@
+<svg viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.4">
+  <!-- Sidedoor Digital :: scan / build / deploy pipeline mark. -->
+  <g font-family="'IBM Plex Mono', monospace" font-size="12" letter-spacing="2" stroke="none" fill="currentColor">
+    <text x="80" y="45" text-anchor="middle">SCAN</text>
+    <text x="450" y="45" text-anchor="middle">BUILD</text>
+    <text x="820" y="45" text-anchor="middle">DEPLOY</text>
+  </g>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="30" y="70" width="100" height="80" rx="4" />
+    <path d="M45 85 V80 H55" /><path d="M105 85 V80 H115" />
+    <path d="M45 135 V140 H55" /><path d="M105 135 V140 H115" />
+    <rect x="400" y="60" width="100" height="100" rx="4" />
+    <path d="M420 60 V40 H460" /><path d="M480 40 V60" />
+    <path d="M400 90 H370 V60" /><path d="M370 130 V160 H400" />
+    <rect x="770" y="70" width="100" height="80" rx="4" />
+    <path d="M820 70 V40" /><path d="M820 40 L810 50 M820 40 L830 50" />
+    <path d="M795 150 V180 H845 V150" />
+  </g>
+  <path d="M130 110 H400" stroke-dasharray="4 5" />
+  <path d="M500 110 H770" stroke-dasharray="4 5" />
+  <circle cx="265" cy="110" r="3" fill="currentColor" stroke="none" />
+  <circle cx="635" cy="110" r="3" fill="currentColor" stroke="none" />
+  <text x="880" y="115" font-family="'IBM Plex Mono', monospace" font-size="10" letter-spacing="1.5" fill="currentColor" stroke="none" text-anchor="end" opacity="0.7" writing-mode="tb">DIRECT DEPLOYMENT</text>
+</svg>
