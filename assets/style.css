@@ -360,30 +360,41 @@ ul.seal-list li .seal{ margin-top:2px; }
   background:var(--ink);
   border:1px solid var(--line-strong);
   border-radius:8px;
-  padding:16px;
+  padding:18px;
   position:relative;
 }
-.mock-bar{
-  display:flex; gap:6px; margin-bottom:14px;
+.mock-label{
+  font-family:var(--font-mono); font-size:12px; letter-spacing:0.04em;
+  color:var(--bone-dim); margin:0 76px 16px 0;
 }
-.mock-bar span{ width:8px; height:8px; border-radius:50%; background:var(--ink-line); }
-.mock-bar span:first-child{ background:var(--gold-deep); }
-.mock-row{
-  height:14px; border-radius:3px; background:var(--ink-line); margin-bottom:9px;
-}
-.mock-row.w-70{ width:70%; }
-.mock-row.w-45{ width:45%; }
-.mock-row.w-90{ width:90%; }
-.mock-row.gold{ background:linear-gradient(90deg, var(--gold-deep), var(--gold)); height:34px; margin-top:16px; }
-.mock-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:14px; }
+.mock-label strong{ color:var(--bone); font-weight:600; }
+.mock-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
 .mock-grid div{
   aspect-ratio:1; border-radius:5px; background-color:var(--ink-line);
   background-image:var(--photo, none);
   background-size:cover; background-position:center;
 }
-.mock-grid div:nth-child(2):not([style]){ background-color:rgba(47,217,160,0.18); border:1px solid rgba(47,217,160,0.4); }
+.mock-list{ display:flex; flex-direction:column; gap:8px; }
+.mock-list-row{
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  background:var(--ink-raised); border:1px solid var(--line);
+  border-radius:5px; padding:11px 13px;
+  font-family:var(--font-body); font-size:0.87rem; color:var(--bone-dim);
+}
+.mock-list-row .tag{
+  font-family:var(--font-mono); font-size:10px; letter-spacing:0.06em; text-transform:uppercase;
+  color:var(--seal); border:1px solid rgba(47,217,160,0.35);
+  padding:3px 8px; border-radius:20px; flex:none;
+}
+.mock-cta{
+  display:flex; align-items:center; justify-content:center;
+  margin-top:14px; height:38px; border-radius:5px;
+  background:linear-gradient(90deg, var(--gold-deep), var(--gold));
+  color:var(--ink); font-family:var(--font-mono); font-size:12px;
+  letter-spacing:0.06em; text-transform:uppercase; font-weight:600;
+}
 .mock-badge{
-  position:absolute; top:14px; right:14px;
+  position:absolute; top:16px; right:16px;
   font-family:var(--font-mono); font-size:10px; letter-spacing:0.08em;
   color:var(--seal); border:1px solid rgba(47,217,160,0.35);
   padding:3px 8px; border-radius:20px; text-transform:uppercase;
